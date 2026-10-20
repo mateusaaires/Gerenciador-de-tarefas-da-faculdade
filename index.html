@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Gerenciador de tarefas da faculdade</h1>
+
+    <input type="text" id="descricao" placeholder="Nome da tarefa">
+
+    <select id="materia">
+        <option value="">Escolha a matéria</option>
+        <option value="JavaScript">Java Script</option>
+        <option value="Java">Java</option>
+        <option value="Banco de Dados">Banco de Dados</option>
+        <option value="Sistemas Operacionais">Sistemas Operacionais</option>
+    </select>
+
+    <select id="prioridade">
+        <option value="">Escolha a prioridade</option>
+        <option value="Alta">Alta</option>
+        <option value="Média">Média</option>
+        <option value="Baixa">Baixa</option>
+    </select>
+
+    <button onclick="adicionarTarefa()">Adicionar tarefa</button>
+
+    <h2>Minhas tarefas</h2>
+
+    <p id="mensagem"></p>
+
+    <ul id="listaTarefas"></ul>
+
+    <h2>Resumo</h2>
+
+    <p id="totalTarefas">Total de tarefas: 0</p>
+    <p id="TarefasConcluidas">Concluídas: 0</p>
+    <p id="TarefasPendentes">Pendentes: 0</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
